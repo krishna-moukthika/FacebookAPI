@@ -1,0 +1,18 @@
+import facebook
+import pandas
+
+from pandas import DataFrame
+
+import numpy as np
+import matplotlib.mlab as mlab
+import matplotlib.pyplot as plt
+
+token = 'access_token'
+graph = facebook.GraphAPI(token)
+profile = graph.get_object("cocacola/likes")
+
+friends = profile['data']
+
+num_bins = 40
+
+print(f)
